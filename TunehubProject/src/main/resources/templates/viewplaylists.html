@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>View songs</title>
+    <link rel="stylesheet" href="viewplaylist.css">
+    
+    
+</head>
+<body>
+
+<h1>View playlists</h1>
+	
+	 <div class="button-grid">
+ 
+	
+<link rel="stylesheet" type="text/css" href="viewplaylist.css">
+ 
+<table border="1">
+	
+			<tr>
+				<th>Name</th>
+				<th>Songs</th>
+			</tr>
+	
+		<tbody>
+			<tr th:each="playlist:${playlists}">
+				
+				<td th:text="${playlist.name}"></td>
+				
+				<td>
+					
+						<li th:each="song:${playlist.songs}">
+							
+							<audio controls>
+							<source th:src="${song.link}">
+							</audio>	
+							
+							</span>
+						</li>
+					
+				</td>
+								
+			</tr>    
+    
+	
+	</form>
+</tbody>
+</body>
+</html>

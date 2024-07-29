@@ -1,0 +1,92 @@
+body {
+	font-family: Arial, sans-serif;
+    background-image: url('/image/D.jpg');
+	background-size: cover;
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 60px;
+	height: 100vh;
+	
+}
+
+form {
+	background-color: cream;
+	width: 300px;
+	height: 450px;
+	margin: 60px auto;
+	padding: 70px;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin: 60px auto;
+	padding: 50px;
+	border-radius: 15px;
+	box-shadow: 0px 5px 5px rgb(0, 0, 0);
+	transition: transform 0.3s ease-in-out;
+	position: relative;
+	padding-top: 10px;
+}
+
+h2 {
+	color:black;
+	text-align: center;
+	font: italy 30px/1 sans-serif;
+	word-spacing: 7px;
+	font-size: 26px;
+	margin-top: 0px;
+}
+
+label {
+	font-size: 15px;
+}
+
+input[type="text"], input[type="email"], input[type="password"],
+	textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #cccccc;
+	border-radius: 23px;
+	box-sizing: border-box;
+}
+
+input[type="radio"] {
+	margin-right: 5px;
+}
+
+input[type="submit"] {
+	background-color: green;
+	width: 100%;
+	padding: 10px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+input[type="submit"]:hover {
+	background-color: grey;
+}
+
+textarea {
+	height: 40px;
+	resize: none;
+}
+
+/* 3D Effect */
+form:hover {
+	transform: scale(1.05);
+}
+
+.top-space {
+	
+	padding: 5px;
+}
+
+.form-container {
+	
+	padding: 20px;
+	box-shadow: 0px 5px 5px rgb(0, 0, 0);
+}

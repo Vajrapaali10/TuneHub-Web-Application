@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image: url('image/musics.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.button-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px; 
+}
+
+table {
+    background-color: cream;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #633A2C;; 
+    color:white;
+}
+
+.song-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.song-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+    font-size: 14px; 
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #f9f9f9; 
+}
+
+.song-item audio {
+    margin-left: 20px; 
+    flex-shrink: 0; 
+}

@@ -1,0 +1,42 @@
+body {
+            font-family: Arial, sans-serif;
+            background-image: url('image/image.jpeg'); /* Replace with your image path */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the background image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            color:white;
+        }
+       
+        h1 {
+            color:  #633A2C; /* Dark text color for better readability */
+            margin-bottom: 20px; /* Space below the heading */
+        }
+        .button-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Vertical spacing between buttons */
+            align-items: center; /* Center buttons horizontally */
+        }
+        .button-grid form {
+            margin: 0; /* Remove default margin */
+        }
+        .button-grid input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            width: 200px; /* Adjust button width if needed */
+        }
+        .button-grid input[type="submit"]:hover {
+            background-color: #0056b3;
+        }

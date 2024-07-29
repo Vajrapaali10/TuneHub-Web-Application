@@ -1,0 +1,58 @@
+
+body {
+	
+    font-family: Arial, sans-serif;
+     margin: 0;
+    padding: 0;
+    background-image: url('/image/musics.jpeg');
+}
+
+header {
+    background-color: #633A2C;
+  color:white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+main {
+    padding: 10px;
+}
+
+.song-list {
+    max-width: 1000px;
+    margin: 0 auto;
+   
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+   
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+     background-color:cream;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #633A2C;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+audio {
+    width: 100%;
+    max-width: 200px;
+}
+}

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image: url('image/musics.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 40px;
+    color: cream ;
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    background-color: cream; 
+    width: 400px; 
+    height: 600px;
+    margin: 20px auto; 
+    padding: 20px; 
+    border: 1px solid rgb(128, 64, 64); 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+    overflow: auto; 
+}
+
+label {
+    display: block;
+    margin-bottom: 10px; 
+}
+
+input[type="text"] {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    border: none;
+    background-color: #45a049;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; 
+}
+
+input[type="submit"]:hover {
+    background-color: darkblue;
+}
+
+.song-item {
+    margin-bottom: 10px; 
+    display: flex;
+    align-items: center; 
+    font-size: 14px;
+}
+
+.song-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+p {
+    font-size: 50px;
+    font-weight: italic;
+    color: rgb(64, 0, 64);
+    text-align: center;
+    margin-top: 100px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>INDEX PAGE</title>
+<link rel="stylesheet" href="index.css">
+
+<body>
+<div class="container"> 
+  <div class="header"> 
+    <div class="jotform-icon"></div>
+    <div class="auth-links">
+      <a href="login" class="link"><u>Login</u></a>
+      <a href="registration" class="link"><u>Register</u></a>
+    </div>
+  </div>
+  <div class="start">
+    <h1 class="title2">Welcome!! 
+      <br> to the Tunehub Music Streaming.</h1>
+    <h3 class="introduce">Playing music effortlessly and diving into a
+      world of endless musical possibilities with 
+      <br> MusicStreaming.</h3>
+    <h2 id="transition-text">"Music, with its melody as delicate as a whisper and rhythm as bold as a heartbeat, weaves stories that echo through the corridors of time."</h2>
+    <button class="button">Get Started</button>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const container = document.querySelector('.container');
+    const slideDuration =1500;
+    const slideDistance = 200; 
+
+    // Initial position off-screen
+    container.style.position = 'relative';
+    container.style.top = `-${slideDistance}px`; 
+    
+    // Function to animate the sliding effect
+    function slideDown() {
+        let startTime = null;
+
+        function animation(currentTime) {
+            if (!startTime) startTime = currentTime;
+            const elapsedTime = currentTime - startTime;
+            const progress = Math.min(elapsedTime / slideDuration, 1); 
+
+           
+            const newTop = -slideDistance + (slideDistance * progress);
+            container.style.top = `${newTop}px`;
+
+          
+            if (progress < 1) {
+                requestAnimationFrame(animation);
+            }
+        }
+
+        requestAnimationFrame(animation);
+    }
+
+  
+    slideDown();
+});
+</script>
+</body>
+</html>
